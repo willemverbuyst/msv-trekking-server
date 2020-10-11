@@ -1,5 +1,5 @@
 export class Server {
-  createServer() {
+  public createServer() {
     console.log('created server');
   }
 }
