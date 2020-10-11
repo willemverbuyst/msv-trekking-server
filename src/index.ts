@@ -1,10 +1,11 @@
 import express from 'express';
-import { router } from './routes/trekRoutes';
+import { router as trekRouter } from './routes/trekRoutes';
+import { PORT } from './config/constants';
 
 const app = express();
 
-app.use(router);
+app.use('/treks', trekRouter);
 
-app.listen(8000, () => {
-  console.log('listening on port 3000');
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT}`);
 });
