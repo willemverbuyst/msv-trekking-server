@@ -22,5 +22,8 @@
     "mongoose": "^5.10.9",
     "nodemon": "^2.0.4",
     "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.7.36"
   }
 }
